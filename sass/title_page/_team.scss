@@ -1,0 +1,96 @@
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px; 
+    background-color: #F5F4FA;
+    
+}
+
+.container-team{    
+    justify-content: center;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;             
+}
+
+.box-team-card{  
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color:#FFFFFF;
+}
+
+.teams-list{    
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+.teams-items{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.team-card-link{
+    text-decoration: none;
+    &:hover{color: var(--blue-color);}
+}
+
+.card-info{
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+
+.team-card{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 10px;         
+}
+
+.team-card-prof{    
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;    
+    color: var(--uptitle-color);           
+}
+
+.team-soc-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.team-soc-items{
+    width: 44px;
+    height: 44px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.team-soc-link{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{background-color: var(--blue-color);}  
+    &:focus{background-color: var(--blue-color);}     
+}
+
+.team-soc-icons{
+    fill: rgb(175,177,184);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .team-soc-link:hover &{fill: #FFFFFF;}
+    .team-soc-link:focus &{fill: #FFFFFF;}
+}

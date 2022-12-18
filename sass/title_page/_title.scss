@@ -1,0 +1,45 @@
+.title-page { 
+    height: 600px;
+    max-height: 1600px; 
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+                                     rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    align-items: center;     
+    padding-top: 200px;
+    padding-bottom: 200px;       
+}
+
+.title-page_caption {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 1.3636;          
+} 
+
+.title-page_btn {
+    font-family: inherit;    
+    font-size: 16px;
+    line-height: 1.875;
+    color: #FFFFFF;
+    background-color: var(--blue-color);   
+    letter-spacing: 0.06em;
+    width: 216px;
+    height: 50px; 
+    border-radius: 4px;
+    border: transparent; 
+    font-weight: 700          
+}
+
+.title-page_container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 40px;  
+    max-width: 696px;     
+}

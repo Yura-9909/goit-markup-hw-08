@@ -1,0 +1,40 @@
+.about-container{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.advantages-items{
+    list-style: none;    
+    display: flex;    
+    gap: 30px;        
+}
+
+.about-items{
+    width: 270px;
+}
+
+.about-us{    
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.about-advantages{    
+    font-size: 14px;
+    line-height: 1.714;       
+    letter-spacing: 0.03em;    
+    color: var(--uptitle-color);
+}
+
+.box-about-icon{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;    
+}
