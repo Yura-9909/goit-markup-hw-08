@@ -1,7 +1,17 @@
 .team{
-    padding-top: 94px;
-    padding-bottom: 94px; 
     background-color: #F5F4FA;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    } 
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }   
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    } 
     
 }
 
@@ -14,21 +24,42 @@
 }
 
 .box-team-card{  
+    width: 100%;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color:#FFFFFF;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    } 
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    } 
 }
 
-.teams-list{    
-    font-size: 36px;
-    line-height: 1.17;
+.teams-list{        
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    margin-bottom: 50px;
+    
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.14;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.14;
+    } 
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }   
 }
 .teams-items{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 

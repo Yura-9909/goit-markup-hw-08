@@ -1,15 +1,53 @@
 .title-page { 
-    height: 600px;
-    max-height: 1600px; 
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
-                                     rgba(47, 48, 58, 0.4)),
-    url(../images/background.jpg); 
+    margin: auto;     
+    background-image:var(--gra),
+    url(../images/bg-mobail.jpg); 
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
-    align-items: center;     
-    padding-top: 200px;
-    padding-bottom: 200px;       
+    align-items: center;  
+    background-size: cover; 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:var(--gra),
+    url(../images/mob-2x.jpg);
+    }
+
+
+    @media screen and (min-width: 480px) {
+        padding-top: 118px;
+        padding-bottom: 118px;              
+        max-width: 100%;
+        background-image:var(--gra),
+        url(../images/bg-tab.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:var(--gra),
+        url(../images/tab-2x.jpg);
+        }
+    } 
+    @media screen and (min-width: 768px) {
+        padding-top: 118px;
+        padding-bottom: 118px;              
+        max-width: 100%;
+        background-image:var(--gra),
+    url(../images/background.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:var(--gra),
+        url(../images/des-2x.jpg);
+        }
+    }   
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 100%;             
+        max-width: 1600px;
+    } 
+          
 }
 
 .title-page_caption {
@@ -19,7 +57,19 @@
     text-transform: uppercase;
     color: #FFFFFF;
     font-size: 44px;
-    line-height: 1.3636;          
+    line-height: 1.3636;  
+    @media screen and (min-width: 480px) {    
+        font-size: 26px;
+        line-height: 1.615;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.615;
+    } 
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.3636;
+    }          
 } 
 
 .title-page_btn {
@@ -40,6 +90,15 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 40px;  
-    max-width: 696px;     
+    gap: 30px;  
+    max-width: 696px; 
+    @media screen and (min-width: 480px) {    
+        max-width: 360px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 360px;
+    } 
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+    }     
 }

@@ -1,6 +1,18 @@
 .visitors{
     padding-top: 94px;
     padding-bottom: 94px;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    } 
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }   
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    } 
 }
 
 .regular-visitors{
@@ -10,11 +22,40 @@
     letter-spacing: 0.03em;
     color: var(--title-color);
     margin-bottom: 50px;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.14;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.14;
+    } 
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }   
 }
 
-.visitors-list{
+.visitors-list{ 
+    height: 100%;
     display: flex; 
-    gap: 30px;  
+    flex-wrap: wrap;   
+    gap: 30px; 
+    justify-content: center; 
+}
+
+.visitors-item{
+    width: 100%;
+    width: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    } 
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    } 
 }
 
 .visitors-link{
