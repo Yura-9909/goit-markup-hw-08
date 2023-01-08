@@ -8,7 +8,7 @@
 
 .footer__nav{
     
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding-right: 0;
     }
     @media screen and (min-width: 768px) {
@@ -20,7 +20,7 @@
 }
 
 .footer__wrap{    
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
           
     }
     @media screen and (min-width: 768px) {
@@ -35,7 +35,7 @@
 
 .footer__logo{   
     margin-bottom: 28px;  
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: flex;  
         justify-content: center;   
        }
@@ -63,7 +63,7 @@
 
 .footer-column{
     
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         
        }
     @media screen and (min-width: 768px) {
@@ -79,7 +79,7 @@
 
 .address{
     list-style: none;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding-bottom: 60px;
         }
     @media screen and (min-width: 768px) {
@@ -99,7 +99,7 @@
 .address__items{
     margin-bottom: 12px;
     display: flex;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
           justify-content: center;
     }
     @media screen and (min-width: 768px) {
@@ -134,7 +134,7 @@
     &:hover{color: var(--blue-color);}    
     &:focus{color: var(--blue-color);}
     &:active{color: #000;} 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         justify-content: center;
         }
     @media screen and (min-width: 768px) {
@@ -164,7 +164,7 @@
     color: #FFFFFF;
     margin-bottom: 20px;
     display: flex;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         justify-content: center;
     }
     @media screen and (min-width: 768px) {
@@ -177,7 +177,7 @@
 .platforms{
     display: flex;    
     gap: 10px;  
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         justify-content: center;
         padding-bottom: 60px;
 
@@ -229,7 +229,7 @@
     color: #FFFFFF;   
     margin-bottom: 20px; 
     display: flex;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         justify-content: center;
         
     }
@@ -241,11 +241,9 @@
     } 
 }
 .subscription__form{
-    display: flex;
-    
-    
-    
-    @media screen and (min-width: 480px) {
+    display: flex; 
+        
+    @media screen and (min-width: 320px) {
         justify-content: center;
         flex-wrap: wrap;        
     }
@@ -270,8 +268,7 @@
     } 
 }
 
-.sub-input__data{
-    width: 450px;
+.sub-input__data{    
     height: 50px;
     background-color: transparent;
     border-radius: 4px;
@@ -279,6 +276,12 @@
     outline: transparent;  
     color: rgba(255, 255, 255, 0.6); 
     padding-left: 16px; 
+    @media screen and (min-width: 320px) {
+        width: 450px;    
+    } 
+    @media screen and (min-width: 1200px) {
+        width: 358px;    
+    } 
    
 }
 .sub-btn{
